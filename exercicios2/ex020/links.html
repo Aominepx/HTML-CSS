@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: rgb(108, 194, 108);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+       a:visited{
+        color: green;
+       }  
+
+       a:hover{
+        color: black;
+        text-decoration: underline;
+       }
+
+       a:active{
+        color: yellow;
+       }
+
+       a::after{
+        content: '[link]';
+text-decoration: none;
+font-weight: normal;
+color: darkgray;
+       }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul type="circle">
+        <li><a href="https://br.pinterest.com/pin/2814818510277965/" target="_blank">Meme aleatorio</a></li>
+        <li><a href="https://www.youtube.com/watch?v=-RxE_7uSDVg" target="_blank">Video do youtube</a></li>
+        <li><a href="https://cursos.dankicode.com/login" target="_blank">Site aleatorio</a></li>
+    </ul>
+</body>
+</html>

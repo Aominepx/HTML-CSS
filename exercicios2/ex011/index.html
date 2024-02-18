@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídas em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dínamicas</h1>
+    <p>Tente abir esse site em vários dispositivos diferentes ou simplimente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <!--Obs: coloque max ao invés de min, os px são do tamanho da sua imagens +50, lembre de colocar PNG em type, os source vem sempre antes quando a imagem for menor.-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+        <h1>Reproduzindo áudio</h1>
+        <p>Vamos aprender a reproduzer áudios em HTML5.</p>
+        <audio src="midia/The New Order - Aaron Kenny.mp3" controls autoplay></audio>
+        <p>Outra maneira. (dento do código)</p>
+        <audio>
+            <source src="midia/The New Order - Aaron Kenny.mp3" type="mpeg">
+            <!-- exemplos de arquivos diferentes, a ordem também é importante. -->
+            <source src="midia/The New Order - Aaron Kenny.ogg" type="ogg">
+            <source src="midia/The New Order - Aaron Kenny.wav" type="wav">
+            <!-- Guanabara não indica usar o wav porque o arquivo é muito grande.  -->
+        </audio>
+</body>
+</html>
