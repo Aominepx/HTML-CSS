@@ -10,6 +10,11 @@ html{
     font-size: 1em;
 }
 
+body{
+    background-color: gray;
+    font-size: 1.1em;
+}
+
 header{
     background-color: gray;
 }
@@ -17,14 +22,26 @@ header{
     text-align: center;
  }
 
-menu ul{
-    background-color: rgb(102, 141, 128);
+menu li{
+    background-color: rgb(93, 93, 93);
     color: white;
-    width: 100px;
+    display: block;
     list-style-type: none;
+    text-align: center;
+    border-top: 2px solid rgb(67, 67, 67);
 }
 
-menu li{
-    display: inline;
-    padding: 10px;
+menu li:hover{
+    background-color: rgb(84, 83, 83);
+}
+
+
+article{
+    background-color: white;
+    display: block;
+    margin: auto;
+    width: 90vw;
+    text-align: center;
+    text-indent: 10px;
+    border-radius: 15px;
 }
